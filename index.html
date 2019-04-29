@@ -12,13 +12,6 @@
 <body>
     <p>Tree UI Demo</p>
     <div id="tree-container"></div>
-    <!-- <div class="custom-cm">
-        <div class="custom-cm-item">Item #1</div>
-        <div class="custom-cm-item">Item #1</div>
-        <div class="custom-cm-item">Item #1</div>
-    </div> -->
-
-
     <script>
         var data = {
             value: "Beverages",
@@ -67,41 +60,6 @@
         var treeView = new TreeView("tree-container");
         treeView.tree.load(data);
     </script>
-
-    <!-- <ul id="myUL">
-        <li><span class="parent">Beverages</span>
-            <ul class="children">
-                <li>Water</li>
-                <li>Coffee</li>
-                <li><span class="parent">Tea</span>
-                    <ul class="children">
-                        <li>Black Tea</li>
-                        <li>White Tea</li>
-                        <li><span class="parent">Green Tea</span>
-                            <ul class="children">
-                                <li>Sencha</li>
-                                <li>Gyokuro</li>
-                                <li>Matcha</li>
-                                <li>Pi Lo Chun</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-    </ul>
-    <script>
-        var toggler = document.getElementsByClassName("parent");
-        var i;
-
-        for (i = 0; i < toggler.length; i++) {
-            toggler[i].addEventListener("click", function (event) {
-                var target = event.target;
-                this.parentElement.querySelector(".children").classList.toggle("active");
-                this.classList.toggle("parent-down");
-            });
-        }
-    </script> -->
 </body>
 
 </html>
