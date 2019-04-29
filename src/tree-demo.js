@@ -171,16 +171,23 @@ var TreeView = (function () {
 
 			clickedNode.appendChild(ul);
 
+			// hide context menu
 			const cm = document.querySelector(".custom-cm");
 			cm.style.display = "none";
 		}
 
 		onRenameNode(event) {
 			console.log("on rename node: ", event);
+			// hide context menu
+			const cm = document.querySelector(".custom-cm");
+			cm.style.display = "none";
 		}
 
 		onDeleteNode(event) {
 			console.log("on delete node: ", event);
+			// hide context menu
+			const cm = document.querySelector(".custom-cm");
+			cm.style.display = "none";
 		}
 
 		createRoot(target, root) {
